@@ -1,0 +1,102 @@
+* {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  max-width: 1440px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 59%);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e3e3e3;
+  transform: translateY(-1000%);
+}
+
+.bg-top {
+  transform: translateY(-45%);
+}
+
+.bg-bottom {
+  transform: translateY(45%);
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: absolute;
+  z-index: 1;
+  border-radius: 5%;
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+}
+
+.bg-image {
+  border-radius: 18px 18px 0 0;
+}
+
+.profile-image {
+  border: solid 5px #fff;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-55%);
+}
+
+.title {
+  text-align: center;
+  transform: translateY(-65%);
+}
+
+.bold {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.location {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.sml-txt {
+  font-size: 12px;
+  margin: 2px;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
