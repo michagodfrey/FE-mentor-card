@@ -5,10 +5,37 @@
 
 body {
   background-color: hsl(185, 75%, 39%);
-  max-width: 1440px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before, body::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  transform: translate(-50%, -50%);
+}
+
+body::before {
+  top: 0;
+  left: 0;
+  background: url("images/bg-pattern-top.svg") no-repeat bottom right;
+}
+
+body::after {
+  top: 100%;
+  left: 100%;
+  background: url("images/bg-pattern-bottom.svg") no-repeat top left;
+}
+
+h1 {
+  font-size: 0px;
 }
 
 p {
@@ -24,29 +51,11 @@ hr {
   transform: translateY(-1000%);
 }
 
-.bg-top {
-  transform: translateY(-45%);
-}
-
-.bg-bottom {
-  transform: translateY(45%);
-}
-
-.wrapper {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .card {
-  position: absolute;
-  z-index: 1;
   border-radius: 5%;
-  width: 350px;
-  height: 400px;
+  max-width: 350px;
   background-color: #fff;
+  padding-bottom: 12px;
 }
 
 .bg-image {
@@ -94,9 +103,11 @@ hr {
 }
 
 .attribution {
+  margin-top: 1rem;
   font-size: 11px; text-align: center;
 }
 
 .attribution a {
+  font-size: 14px;
   color: hsl(228, 45%, 44%);
 }
